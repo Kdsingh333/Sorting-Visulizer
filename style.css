@@ -10,20 +10,27 @@ h1{
     display: flex;
     flex-flow: row wrap;
     width: 620px;
-    height: 50px;
-    border: 1px solid black;
-    margin: 100px auto;
+   margin: auto;
+    
 }
-.grid div{
-    width:60px;
-    height: inherit;
-    border: 1px solid black;
-    text-align: center;
-    font-weight: 700;
-    color: black;
-    font-size: x-large;
-}
+
 
 .exchange{
     background-color:lightgreen;
+}
+
+td {
+   border: 1px solid green;
+}
+
+.input{
+    margin-left: 40px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.buton{
+    margin: 20px;
+    margin-left: 40px;
+    width: 35px;
 }
