@@ -16,11 +16,13 @@ h1{
 
 
 .exchange{
-    background-color:lightgreen;
+    background-color:#7D8F69;
+    color: white;
+    border: 3px solid white;
 }
 
 td {
-   border: 1px solid green;
+   border: 1px solid black;
 }
 
 .input{
@@ -33,4 +35,11 @@ td {
     margin: 20px;
     margin-left: 40px;
     width: 35px;
+}
+.done
+{
+    background-color: #557153;
+    color: white;
+    border: 3px solid white;
+    
 }

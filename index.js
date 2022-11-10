@@ -71,7 +71,7 @@ async function bubble_sort() {
     for (let i = 0; i < rs.length - 1; i++) {
         for (let j = 0; j < (rs.length - i - 1); j++) {
             await sleep(300)
-            if (parseInt(document.getElementById("data" + [i]).innerHTML) > parseInt(document.getElementById("data" + [i + 1]).innerHTML)) {
+            if (parseInt(document.getElementById("data" + [j]).innerHTML) > parseInt(document.getElementById("data" + [j + 1]).innerHTML)) {
                 if (j > 0) {
                     document.getElementById("data" + [j - 1]).classList.remove('exchange');
                     document.getElementById("data" + [j]).classList.remove('exchange');
@@ -87,7 +87,9 @@ async function bubble_sort() {
                 if (j === rs.length - i - 2) {
                     await sleep(1000)
                     document.getElementById("data" + [j]).classList.remove('exchange');
-                    document.getElementById("data" + [j + 1]).remove('exchange');
+                    document.getElementById("data" + [j + 1]).classList.remove('exchange');
+                    
+
 
                     await sleep(300)
                 }
@@ -98,6 +100,8 @@ async function bubble_sort() {
 
         }
     }
+    
+    
 
     // for (let i = 0; i < squares.length - 1; i++) {
     //     for (let j = 0; j < (squares.length - i - 1); j++) {
