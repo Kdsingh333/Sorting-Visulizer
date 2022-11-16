@@ -15,52 +15,159 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+<!-- Google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono&family=Yeseva+One&display=swap" rel="stylesheet">
+
 <!-- # css style -->
 <link rel="stylesheet" href="Home.css" />
-<link rel="icon" href="images/logo1.png" type="x-icon">
-<!-- # googlefont -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet" />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet" />
 <!-- font awesome href -->
 <script src="https://kit.fontawesome.com/fd9f6608c3.js" crossorigin="anonymous"></script>
 <style>
-  .heading{
-    text-align: center;
-    font-family: 'Sacramento';
-    padding:30px;
-  }
-  .row1-color{
-    background-color: cornflowerblue;
-  }
+    .heading {
+
+        font-family: 'Yeseva One', cursive;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+        color: #150A44;
+    }
+
+    .previous {
+
+        padding-left: 10px;
+        padding-top: 12px;
+
+    }
+
+
+
+    .row1-color {
+        background-color: cornflowerblue;
+    }
+
+    .main-heading {
+        box-sizing: border-box;
+        text-align: center;
+        background: #FFFFFF;
+        border: 2px solid #CEDCDD;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 27px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .container1 {
+        height: 600px;
+        width: 90%;
+        margin-left: 40px;
+        margin-top: 50px;
+        background: #bef0f4;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 75px;
+    }
+
+    .btn {
+        width: 224px;
+        height: 56px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 45px;
+        font-size: 40px;
+    }
+
+    .bubble-sort-img1 {
+        height: 200px;
+        width: 362px;
+        border-radius: 45px;
+        margin-left: 30px;
+    }
+
+    h2 {
+        font-family: 'Abril Fatface', cursive;
+
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .para {
+        font-family: 'Space Mono', monospace;
+        font-size: 15px;
+
+    }
+
+    .para-heading {
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    .row {
+        padding: 2% 4% 5%;
+
+    }
+
+    .btn-space {
+        margin-left: 70px;
+        margin-top: 80px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 25px;
+        border-radius: 25px;
+    }
+     a{
+        text-decoration: none;
+      
+
+     }
+     a:hover{
+        text-decoration: none;
+        color: white;
+
+     }
 </style>
 
 <body>
     <div class="container-fluid">
-        <h1 class="heading">Introduction Of Sorting Algorithm</h1>
-        <div class="row row1-color ">
-            <div class="col-lg-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio hic impedit aut consectetur et eius, aliquid quasi similique perferendis ratione assumenda saepe tempora fugiat sequi consequatur a dignissimos. Sequi facilis vitae, facere molestiae veniam neque!</p>
+
+        <div class="main-heading">
+            <a href="Home.html" class="previous" style=" float:left; "> <i class='fa fa-home res'
+                    style='font-size:30px; color:#6c757d'> Home</i></a>
+            <h1 class="heading">Introduction Of Sorting Algorithm</h1>
+        </div>
+        <div class="container1">
+            <h2> BUBBLE SORT</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="Bubble-Sort-3.png" alt="" class="bubble-sort-img1">
+                </div>
+                <div class="col-lg-6 para">An in-place sorting algorithm that finds max. element in each cycle and puts
+                    it in
+                    appropriate position in list by performing swapping adjacent elements. In bubble sort, we continue
+                    swapping adjacent elements until they are in correct order. As we need to iterate the whole array
+                    for every element, the complexity of this algorithm is O(n^2).</div>
+
             </div>
-            <div class="col-lg-6">
-                <img src="bubble-sort.png" alt="">
+            <div class="row">
+                <div class="col-lg-6 para">
+                    <p class="para-heading"> Steps to implement bubble sort: </p>
+                    In first cycle, Start by comparing 1st and 2nd element and swap if
+                    1st element is greater. After that do the same for 2nd and 3rd element. At the end of cycle you will
+                    get max element at the end of list. Now do the same in all subsequent cycles. Perform this for
+                    (number of elements - 1) times. You will get sorted list.
+                </div>
+                <div class="col-lg-6 "><button type="button"
+                        class="btn btn-outline-success btn-space"> <a href="index.html">Visualise</a></button></div>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="bubble-sort.png" alt="">
-            </div>
-            <div class="col-lg-6">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quod vitae minima, hic beatae nisi esse, voluptates aliquid fugit distinctio vero, eveniet facilis? Eos vel nesciunt mollitia molestiae voluptas illo expedita laboriosam praesentium iusto laudantium.</p>
-            </div>
-            
-        </div>
+        
+    </div>
 
     </div>
 </body>
