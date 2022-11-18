@@ -4,6 +4,7 @@
 .spacing{
   padding:1% 10% 0;
   background-color: #E4FBFF;
+  height: 90vh;
  
 }
 .big-heading {
@@ -12,7 +13,7 @@
     line-height: 1.5;
     font-weight: 900;
     margin-bottom: 2%;
-    text-align: ce;
+    text-align: center;
 }
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E)
@@ -45,10 +46,11 @@ a:hover{
     font-family: "Montserrat-Light";
 }
 
-/* visulization button */
+/* visualization button */
 .bt{
    padding-bottom: 30px;
    text-align: center;
+   padding-top: 30px;
 }
 
 a{
@@ -64,7 +66,13 @@ a:hover{
     padding: 0% 1% 1%;
 }
 #footer {
-    padding: 2% 15% 1%;
+    padding: 1% 15% 2.5%;
     text-align: center;
+    height: 8vh;
+    font-size: 20px;
 
+}
+.btn{
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
