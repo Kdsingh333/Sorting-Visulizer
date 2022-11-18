@@ -19,7 +19,8 @@
 <!-- Google font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono&family=Yeseva+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Space+Mono&family=Yeseva+One&display=swap"
+    rel="stylesheet">
 
 <!-- # css style -->
 <link rel="stylesheet" href="Home.css" />
@@ -66,7 +67,7 @@
     .container1 {
         height: 600px;
         width: 90%;
-        margin-left: 40px;
+        margin-left: 70px;
         margin-top: 50px;
         background: #bef0f4;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -120,16 +121,27 @@
         font-size: 25px;
         border-radius: 25px;
     }
-     a{
-        text-decoration: none;
-      
 
-     }
-     a:hover{
+    a {
+        text-decoration: none;
+
+
+    }
+
+    a:hover {
         text-decoration: none;
         color: white;
 
-     }
+    }
+
+    .ic {
+        padding: 0 1% 2%;
+    }
+
+    #footer {
+        padding: 2% 15% 1%;
+        text-align: center;
+    }
 </style>
 
 <body>
@@ -150,7 +162,8 @@
                     it in
                     appropriate position in list by performing swapping adjacent elements. In bubble sort, we continue
                     swapping adjacent elements until they are in correct order. As we need to iterate the whole array
-                    for every element, the complexity of this algorithm is O(n^2).</div>
+                    for every element, the complexity of this algorithm is O(n^2).
+                </div>
 
             </div>
             <div class="row">
@@ -161,15 +174,26 @@
                     get max element at the end of list. Now do the same in all subsequent cycles. Perform this for
                     (number of elements - 1) times. You will get sorted list.
                 </div>
-                <div class="col-lg-6 "><button type="button"
-                        class="btn btn-outline-success btn-space"> <a href="sim.html">Visualise</a></button></div>
+                <div class="col-lg-6 "><button type="button" class="btn btn-outline-success btn-space"> <a
+                            href="sim.html">Visualise</a></button></div>
 
             </div>
         </div>
-        
-    </div>
 
     </div>
+
+
+    </div>
+    <!-- Footer -->
+
+    <footer id="footer">
+        <i class=" ic fa fa-twitter"></i>
+        <i class=" ic fa fa-instagram"></i>
+        <i class=" ic fa fa-facebook-square"></i>
+        <i class="ic fa fa-link"></i>
+        <p>© Hritick Kumar Jha 2022 </p>
+
+    </footer>
 </body>
 
 </html>
